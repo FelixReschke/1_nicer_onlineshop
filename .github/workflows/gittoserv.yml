@@ -21,7 +21,7 @@ jobs:
 
       # This step deploys the files from the repo to the server with SSH deploy (https://github.com/marketplace/actions/ssh-deploy)
       - name: deploy to server 📤
-      uses: easingthemes/ssh-deploy@main
+        uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ SSH_PRIVATE_KEY }} # use secrets for deployment (https://docs.github.com/en/actions/security-guides/encrypted-secrets)
           ARGS: --delete
