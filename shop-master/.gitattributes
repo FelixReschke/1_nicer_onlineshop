@@ -1,0 +1,6 @@
+assets/js/bootstrap.* linguist-vendored
+assets/js/jquery* linguist-vendored
+assets/css/bootstrap.* linguist-vendored
+assets/css/fontawesome.* linguist-vendored
+assets/webfonts/* linguist-vendored
+assets/sprites/* linguist-vendored

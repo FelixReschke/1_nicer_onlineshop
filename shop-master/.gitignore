@@ -1,0 +1,15 @@
+/.ddev
+/config/paypal.php
+/config/mail.php
+/config/database.php
+TODO.md
+/.vscode
+/.idea
+/vendor
+/logs/log-*
+/storage/security/key_*
+/storage/invoices/invoice-*
+/bin/*.exe
+/bin/*.dll
+/storage/productPictures/*/*
+!/storage/productPictures/keep.me

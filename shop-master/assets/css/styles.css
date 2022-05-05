@@ -1,0 +1,99 @@
+#cartItems .cartItem{
+  border-bottom: 1px solid #DDD;
+  padding-top:15px;
+  padding-bottom: 15px;
+}
+#cartItems .cartItemHeader{
+  border-bottom: 1px solid #DDD;
+}
+
+#cartItems .cartItem .productPicture{
+  width: 100%;
+  height: auto;
+}
+#cartItems .price{
+  font-weight: bold;
+  color:red;
+}
+.pdf-container{
+  width: 21cm;
+  height: 29.7cm;
+  position: relative;
+  z-index: 1;
+}
+.pdf-container section#products table tfoot td[colspan]{
+  text-align: right;
+}
+.pdf-container section#products table tfoot .total *{
+  font-weight: bold;
+}
+
+#products #newProduct a{
+  font-size: 5em;
+}
+.card{
+  margin-bottom: 1em;
+}
+.card.DRAFT{
+  border:1px solid red;
+}
+.is-dragover .drop-zone{
+  background: #cacaca;
+}
+form.droppable .advanced{
+  display: none;
+}
+form.can-drop .advanced{
+  display: inline;
+}
+
+.drop-zone label{
+  top:30%;
+  position: relative;
+  cursor: pointer;
+}
+.drop-zone{
+  min-height: 300px;
+}
+.drop-zone input[type="file"]{
+  display: none;
+}
+#ajaxLoader{
+  position: relative;
+  text-align: center;
+}
+
+.dot{
+  width: 2em;
+  height: 2em;
+  border:2px solid  #007bff;
+  background-color: #cce5ff;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 .5em;
+  transform: scale(0);
+  animation: dotanimation 1000ms ease infinite 0ms;
+}
+.dot:nth-child(2){
+  animation: dotanimation 1000ms ease infinite 200ms;
+}
+.dot:nth-child(3){
+  animation: dotanimation 1000ms ease infinite 400ms;
+}
+.dot:nth-child(4){
+  animation: dotanimation 1000ms ease infinite 0ms;
+}
+.dot:nth-child(4){
+  animation: dotanimation 1000ms ease infinite 200ms;
+}
+
+
+@keyframes dotanimation{
+  50%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}

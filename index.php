@@ -7,7 +7,7 @@ ini_set('display_errors','On');
 <html lang="de">
 
 <head>
-    <title>Candyland3</title>
+    <title>Candyland_5</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="Assets/css/styles.css">
@@ -16,7 +16,7 @@ ini_set('display_errors','On');
 <body>
     <header class="jumbotron">
         <div class="container">
-            <h1>Willkommen im Candylan</h1>
+            <h1>Willkommen im Candyland</h1>
         </div>
     </header>
     <section class="container" id="products">
