@@ -7,7 +7,7 @@ ini_set('display_errors','On');
 <html lang="de">
 
 <head>
-    <title>Candyland_5</title>
+    <title>Candyland_4</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="Assets/css/styles.css">
