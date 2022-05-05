@@ -1,6 +1,4 @@
-# This is a basic workflow to help you get started with Actions
-
-name: Deploy on pname: deploy static php site
+name: deploy static php site
 
 # Controls when the action will run. 
 on:
@@ -25,11 +23,11 @@ jobs:
       - name: deploy to server 📤
       uses: easingthemes/ssh-deploy@main
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }} # use secrets for deployment (https://docs.github.com/en/actions/security-guides/encrypted-secrets)
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }} # use secrets for deployment (https://docs.github.com/en/actions/security-guides/encrypted-secrets)
           ARGS: --delete
           SOURCE: "dist/" # use the origin of the php main file here (follows repo structure)
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          REMOTE_HOST: ${{ secrets.SSH_HOST }}
+          REMOTE_USER: ${{ secrets.SSH_USER }}
           TARGET: ${{ secrets.REMOTE_TARGET }}
           EXCLUDE: "/dist/"
 
